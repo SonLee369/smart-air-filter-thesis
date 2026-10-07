@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 839" width="1100" height="839" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title>Fig 4 — Gateway wiring (ESP32 38-pin + LoRa Ra-02)</title>
+<defs><marker id="a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker><marker id="a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ea580c"/></marker><marker id="a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a16207"/></marker></defs>
+<rect width="1100" height="839" fill="#ffffff"/>
+<text x="550.0" y="34" font-size="18" font-weight="700" text-anchor="middle" fill="#1f2937" >Fig 4 — Gateway wiring (ESP32 38-pin + LoRa Ra-02)</text>
+<rect x="470" y="80" width="170" height="574" rx="10" fill="#1e293b" stroke="#0f172a"/>
+<text x="555.0" y="102" font-size="12" font-weight="700" text-anchor="middle" fill="#f8fafc" >ESP32 DevKitC (38-pin)</text>
+<rect x="527.0" y="648" width="56" height="20" rx="3" fill="#94a3b8"/>
+<text x="555.0" y="663" font-size="10" font-weight="700" text-anchor="middle" fill="#0f172a" >USB</text>
+<circle cx="470" cy="120" r="5" fill="#fbbf24" stroke="#0f172a"/>
+<text x="482" y="124" font-size="11" font-weight="700" text-anchor="start" fill="#f8fafc" >3V3</text>
+<line x1="465" y1="120" x2="360" y2="120" stroke="#a16207" stroke-width="2"/>
+<rect x="140" y="109" width="220" height="22" rx="5" fill="#fef9c3" stroke="#a16207" stroke-width="1.2"/>
+<text x="150" y="124" font-size="11.5" font-weight="600" text-anchor="start" fill="#1f2937" >Ra-02  3.3V</text>
+<circle cx="470" cy="148" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="482" y="152" font-size="11" font-weight="400" text-anchor="start" fill="#94a3b8" >EN</text>
+<circle cx="470" cy="176" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="482" y="180" font-size="11" font-weight="400" text-anchor="start" fill="#94a3b8" >VP 36</text>
+<circle cx="470" cy="204" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="482" y="208" font-size="11" font-weight="400" text-anchor="start" fill="#94a3b8" >VN 39</text>
+<circle cx="470" cy="232" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="482" y="236" font-size="11" font-weight="400" text-anchor="start" fill="#94a3b8" >34</text>
+<circle cx="470" cy="260" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="482" y="264" font-size="11" font-weight="400" text-anchor="start" fill="#94a3b8" >35</text>
+<circle cx="470" cy="288" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="482" y="292" font-size="11" font-weight="400" text-anchor="start" fill="#94a3b8" >32</text>
+<circle cx="470" cy="316" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="482" y="320" font-size="11" font-weight="400" text-anchor="start" fill="#94a3b8" >33</text>
+<circle cx="470" cy="344" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="482" y="348" font-size="11" font-weight="400" text-anchor="start" fill="#94a3b8" >25</text>
+<circle cx="470" cy="372" r="5" fill="#fbbf24" stroke="#0f172a"/>
+<text x="482" y="376" font-size="11" font-weight="700" text-anchor="start" fill="#f8fafc" >26</text>
+<line x1="465" y1="372" x2="360" y2="372" stroke="#0d9488" stroke-width="2"/>
+<rect x="140" y="361" width="220" height="22" rx="5" fill="#e0f7f6" stroke="#0d9488" stroke-width="1.2"/>
+<text x="150" y="376" font-size="11.5" font-weight="600" text-anchor="start" fill="#1f2937" >Ra-02  DIO0 (polled)</text>
+<circle cx="470" cy="400" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="482" y="404" font-size="11" font-weight="400" text-anchor="start" fill="#94a3b8" >27</text>
+<circle cx="470" cy="428" r="5" fill="#fbbf24" stroke="#0f172a"/>
+<text x="482" y="432" font-size="11" font-weight="700" text-anchor="start" fill="#f8fafc" >14</text>
+<line x1="465" y1="428" x2="360" y2="428" stroke="#0d9488" stroke-width="2"/>
+<rect x="140" y="417" width="220" height="22" rx="5" fill="#e0f7f6" stroke="#0d9488" stroke-width="1.2"/>
+<text x="150" y="432" font-size="11.5" font-weight="600" text-anchor="start" fill="#1f2937" >Ra-02  RST</text>
+<circle cx="470" cy="456" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="482" y="460" font-size="11" font-weight="400" text-anchor="start" fill="#94a3b8" >12</text>
+<circle cx="470" cy="484" r="5" fill="#fbbf24" stroke="#0f172a"/>
+<text x="482" y="488" font-size="11" font-weight="700" text-anchor="start" fill="#f8fafc" >GND</text>
+<line x1="465" y1="484" x2="360" y2="484" stroke="#111827" stroke-width="2"/>
+<rect x="140" y="473" width="220" height="22" rx="5" fill="#e5e7eb" stroke="#111827" stroke-width="1.2"/>
+<text x="150" y="488" font-size="11.5" font-weight="600" text-anchor="start" fill="#1f2937" >Ra-02  GND</text>
+<circle cx="470" cy="512" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="482" y="516" font-size="11" font-weight="400" text-anchor="start" fill="#94a3b8" >13</text>
+<circle cx="470" cy="540" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="482" y="544" font-size="11" font-weight="400" text-anchor="start" fill="#94a3b8" >SD2</text>
+<circle cx="470" cy="568" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="482" y="572" font-size="11" font-weight="400" text-anchor="start" fill="#94a3b8" >SD3</text>
+<circle cx="470" cy="596" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="482" y="600" font-size="11" font-weight="400" text-anchor="start" fill="#94a3b8" >CMD</text>
+<circle cx="470" cy="624" r="5" fill="#fbbf24" stroke="#0f172a"/>
+<text x="482" y="628" font-size="11" font-weight="700" text-anchor="start" fill="#f8fafc" >5V</text>
+<line x1="465" y1="624" x2="360" y2="624" stroke="#a16207" stroke-width="2"/>
+<rect x="140" y="613" width="220" height="22" rx="5" fill="#fef9c3" stroke="#a16207" stroke-width="1.2"/>
+<text x="150" y="628" font-size="11.5" font-weight="600" text-anchor="start" fill="#1f2937" >USB / 5 V supply</text>
+<circle cx="640" cy="120" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="628" y="124" font-size="11" font-weight="400" text-anchor="end" fill="#94a3b8" >GND</text>
+<circle cx="640" cy="148" r="5" fill="#fbbf24" stroke="#0f172a"/>
+<text x="628" y="152" font-size="11" font-weight="700" text-anchor="end" fill="#f8fafc" >23</text>
+<line x1="645" y1="148" x2="750" y2="148" stroke="#0d9488" stroke-width="2"/>
+<rect x="750" y="137" width="220" height="22" rx="5" fill="#e0f7f6" stroke="#0d9488" stroke-width="1.2"/>
+<text x="760" y="152" font-size="11.5" font-weight="600" text-anchor="start" fill="#1f2937" >Ra-02  MOSI</text>
+<circle cx="640" cy="176" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="628" y="180" font-size="11" font-weight="400" text-anchor="end" fill="#94a3b8" >22</text>
+<circle cx="640" cy="204" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="628" y="208" font-size="11" font-weight="400" text-anchor="end" fill="#94a3b8" >TX0</text>
+<circle cx="640" cy="232" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="628" y="236" font-size="11" font-weight="400" text-anchor="end" fill="#94a3b8" >RX0</text>
+<circle cx="640" cy="260" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="628" y="264" font-size="11" font-weight="400" text-anchor="end" fill="#94a3b8" >21</text>
+<circle cx="640" cy="288" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="628" y="292" font-size="11" font-weight="400" text-anchor="end" fill="#94a3b8" >GND </text>
+<circle cx="640" cy="316" r="5" fill="#fbbf24" stroke="#0f172a"/>
+<text x="628" y="320" font-size="11" font-weight="700" text-anchor="end" fill="#f8fafc" >19</text>
+<line x1="645" y1="316" x2="750" y2="316" stroke="#0d9488" stroke-width="2"/>
+<rect x="750" y="305" width="220" height="22" rx="5" fill="#e0f7f6" stroke="#0d9488" stroke-width="1.2"/>
+<text x="760" y="320" font-size="11.5" font-weight="600" text-anchor="start" fill="#1f2937" >Ra-02  MISO</text>
+<circle cx="640" cy="344" r="5" fill="#fbbf24" stroke="#0f172a"/>
+<text x="628" y="348" font-size="11" font-weight="700" text-anchor="end" fill="#f8fafc" >18</text>
+<line x1="645" y1="344" x2="750" y2="344" stroke="#0d9488" stroke-width="2"/>
+<rect x="750" y="333" width="220" height="22" rx="5" fill="#e0f7f6" stroke="#0d9488" stroke-width="1.2"/>
+<text x="760" y="348" font-size="11.5" font-weight="600" text-anchor="start" fill="#1f2937" >Ra-02  SCK</text>
+<circle cx="640" cy="372" r="5" fill="#fbbf24" stroke="#0f172a"/>
+<text x="628" y="376" font-size="11" font-weight="700" text-anchor="end" fill="#f8fafc" >5</text>
+<line x1="645" y1="372" x2="750" y2="372" stroke="#0d9488" stroke-width="2"/>
+<rect x="750" y="361" width="220" height="22" rx="5" fill="#e0f7f6" stroke="#0d9488" stroke-width="1.2"/>
+<text x="760" y="376" font-size="11.5" font-weight="600" text-anchor="start" fill="#1f2937" >Ra-02  NSS (CS)</text>
+<circle cx="640" cy="400" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="628" y="404" font-size="11" font-weight="400" text-anchor="end" fill="#94a3b8" >17</text>
+<circle cx="640" cy="428" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="628" y="432" font-size="11" font-weight="400" text-anchor="end" fill="#94a3b8" >16</text>
+<circle cx="640" cy="456" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="628" y="460" font-size="11" font-weight="400" text-anchor="end" fill="#94a3b8" >4</text>
+<circle cx="640" cy="484" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="628" y="488" font-size="11" font-weight="400" text-anchor="end" fill="#94a3b8" >0</text>
+<circle cx="640" cy="512" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="628" y="516" font-size="11" font-weight="400" text-anchor="end" fill="#94a3b8" >2</text>
+<circle cx="640" cy="540" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="628" y="544" font-size="11" font-weight="400" text-anchor="end" fill="#94a3b8" >15</text>
+<circle cx="640" cy="568" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="628" y="572" font-size="11" font-weight="400" text-anchor="end" fill="#94a3b8" >SD1</text>
+<circle cx="640" cy="596" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="628" y="600" font-size="11" font-weight="400" text-anchor="end" fill="#94a3b8" >SD0</text>
+<circle cx="640" cy="624" r="5" fill="#64748b" stroke="#0f172a"/>
+<text x="628" y="628" font-size="11" font-weight="400" text-anchor="end" fill="#94a3b8" >CLK</text>
+<rect x="40" y="699" width="1020" height="120" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5"/>
+<text x="60" y="725" font-size="13" font-weight="700" text-anchor="start" fill="#ea580c" >Notes</text>
+<text x="60" y="749" font-size="11.5" font-weight="400" text-anchor="start" fill="#4b5563" >• Ra-02 is a 3.3 V part: never connect its VCC to 5 V. Fit the 433 MHz antenna before transmitting.</text>
+<text x="60" y="768" font-size="11.5" font-weight="400" text-anchor="start" fill="#4b5563" >• DIO0 uses GPIO26, not GPIO2 (GPIO2 is a boot strapping pin and drives the on-board LED).</text>
+<text x="60" y="787" font-size="11.5" font-weight="400" text-anchor="start" fill="#4b5563" >• Pin order follows the common DevKitC layout; check the silkscreen of your board.</text>
+<text x="60" y="806" font-size="11.5" font-weight="400" text-anchor="start" fill="#4b5563" >• Same SPI pins as the node (VSPI 18/19/23/5), so one wiring habit for both boards.</text>
+</svg>

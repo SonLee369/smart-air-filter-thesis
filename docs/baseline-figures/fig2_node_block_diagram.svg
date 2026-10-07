@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 990 540" width="990" height="540" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title>Fig 2 — Filter column node: block diagram</title>
+<defs><marker id="a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker><marker id="a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ea580c"/></marker><marker id="a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a16207"/></marker></defs>
+<rect width="990" height="540" fill="#ffffff"/>
+<text x="495.0" y="34" font-size="18" font-weight="700" text-anchor="middle" fill="#1f2937" >Fig 2 — Filter column node: block diagram</text>
+<rect x="390" y="190" width="200" height="240" rx="8" fill="#e8f0fe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="490.0" y="260.2" font-size="13" font-weight="700" text-anchor="middle" fill="#2563eb" >ESP32-WROOM-32</text>
+<text x="490.0" y="278.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >30-pin DevKit · node</text>
+<text x="490.0" y="296.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >ADC (4 ch)</text>
+<text x="490.0" y="314.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >LEDC PWM 20 kHz</text>
+<text x="490.0" y="332.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >SPI · I²C</text>
+<text x="490.0" y="350.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >GPIO interrupt</text>
+<text x="490.0" y="368.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >NVS (MQ-7 R0)</text>
+<rect x="390" y="70" width="200" height="60" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+<text x="490.0" y="95.2" font-size="13" font-weight="700" text-anchor="middle" fill="#a16207" >5 V 1 A adapter</text>
+<text x="490.0" y="113.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >control + sensors</text>
+<line x1="490" y1="130" x2="490" y2="188" stroke="#a16207" stroke-width="1.6" marker-end="url(#a-amber)"/>
+<text x="500" y="165" font-size="11" font-weight="400" text-anchor="start" fill="#a16207" >5 V → VIN</text>
+<rect x="720" y="40" width="230" height="50" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+<text x="835.0" y="60.2" font-size="13" font-weight="700" text-anchor="middle" fill="#a16207" >12 V 15 A PSU</text>
+<text x="835.0" y="78.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >motor power only</text>
+<rect x="40" y="130" width="230" height="60" rx="8" fill="#fff1e6" stroke="#ea580c" stroke-width="1.5"/>
+<text x="155.0" y="155.2" font-size="13" font-weight="700" text-anchor="middle" fill="#ea580c" >GP2Y1010 — inlet dust</text>
+<text x="155.0" y="173.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >LED GPIO25 · VOUT GPIO33</text>
+<line x1="272" y1="160" x2="388" y2="230" stroke="#ea580c" stroke-width="1.6" marker-end="url(#a-orange)"/>
+<text x="330" y="189.0" font-size="10" font-weight="400" text-anchor="middle" fill="#4b5563" >ADC + pulse</text>
+<rect x="40" y="215" width="230" height="60" rx="8" fill="#fff1e6" stroke="#ea580c" stroke-width="1.5"/>
+<text x="155.0" y="240.2" font-size="13" font-weight="700" text-anchor="middle" fill="#ea580c" >GP2Y1010 — outlet dust</text>
+<text x="155.0" y="258.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >LED GPIO14 · VOUT GPIO32</text>
+<line x1="272" y1="245" x2="388" y2="280" stroke="#ea580c" stroke-width="1.6" marker-end="url(#a-orange)"/>
+<text x="330" y="256.5" font-size="10" font-weight="400" text-anchor="middle" fill="#4b5563" >ADC + pulse</text>
+<rect x="40" y="300" width="230" height="60" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+<text x="155.0" y="325.2" font-size="13" font-weight="700" text-anchor="middle" fill="#b45309" >MQ-7 — inlet CO</text>
+<text x="155.0" y="343.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >AOUT GPIO4</text>
+<line x1="272" y1="330" x2="388" y2="330" stroke="#a16207" stroke-width="1.6" marker-end="url(#a-amber)"/>
+<text x="330" y="324.0" font-size="10" font-weight="400" text-anchor="middle" fill="#4b5563" >ADC</text>
+<rect x="40" y="385" width="230" height="60" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+<text x="155.0" y="410.2" font-size="13" font-weight="700" text-anchor="middle" fill="#b45309" >MQ-7 — outlet CO</text>
+<text x="155.0" y="428.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >AOUT GPIO35</text>
+<line x1="272" y1="415" x2="388" y2="380" stroke="#a16207" stroke-width="1.6" marker-end="url(#a-amber)"/>
+<text x="330" y="391.5" font-size="10" font-weight="400" text-anchor="middle" fill="#4b5563" >ADC</text>
+<rect x="720" y="110" width="230" height="60" rx="8" fill="#fde8e8" stroke="#dc2626" stroke-width="1.5"/>
+<text x="835.0" y="135.2" font-size="13" font-weight="700" text-anchor="middle" fill="#dc2626" >BTS7960 H-bridge</text>
+<text x="835.0" y="153.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >RPWM GPIO26 · LPWM GPIO27 (LOW)</text>
+<line x1="835" y1="90" x2="835" y2="108" stroke="#a16207" stroke-width="1.6" marker-end="url(#a-amber)"/>
+<text x="843" y="104" font-size="10" font-weight="400" text-anchor="start" fill="#a16207" >12 V</text>
+<line x1="592" y1="215" x2="718" y2="140" stroke="#dc2626" stroke-width="1.6" marker-end="url(#a-red)"/>
+<text x="650" y="168" font-size="10" font-weight="400" text-anchor="middle" fill="#4b5563" >PWM</text>
+<rect x="720" y="195" width="230" height="50" rx="8" fill="#fde8e8" stroke="#dc2626" stroke-width="1.5"/>
+<text x="835.0" y="215.2" font-size="13" font-weight="700" text-anchor="middle" fill="#dc2626" >Centrifugal fan</text>
+<text x="835.0" y="233.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >12 V DC motor · magnet on shaft</text>
+<line x1="835" y1="170" x2="835" y2="193" stroke="#dc2626" stroke-width="1.6" marker-end="url(#a-red)"/>
+<text x="843" y="186" font-size="10" font-weight="400" text-anchor="start" fill="#4b5563" >M+ / M−</text>
+<rect x="720" y="275" width="230" height="55" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="835.0" y="297.7" font-size="13" font-weight="700" text-anchor="middle" fill="#7c3aed" >KY-003 Hall sensor</text>
+<text x="835.0" y="315.7" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >S → GPIO34 (falling-edge ISR)</text>
+<line x1="835" y1="245" x2="835" y2="273" stroke="#7c3aed" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="843" y="263" font-size="10" font-weight="400" text-anchor="start" fill="#4b5563" >1 pulse / turn</text>
+<line x1="718" y1="302" x2="592" y2="300" stroke="#7c3aed" stroke-width="1.6" marker-end="url(#a-purple)"/>
+<text x="655" y="294" font-size="10" font-weight="400" text-anchor="middle" fill="#4b5563" >INT</text>
+<rect x="720" y="360" width="230" height="60" rx="8" fill="#e0f7f6" stroke="#0d9488" stroke-width="1.5"/>
+<text x="835.0" y="385.2" font-size="13" font-weight="700" text-anchor="middle" fill="#0d9488" >LoRa Ra-02 (SX1278)</text>
+<text x="835.0" y="403.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >433 MHz · NSS 5 · SPI 18/19/23</text>
+<line x1="592" y1="375" x2="718" y2="390" stroke="#0d9488" stroke-width="1.6" marker-end="url(#a-teal)" marker-start="url(#a-teal)"/>
+<text x="655" y="372" font-size="10" font-weight="400" text-anchor="middle" fill="#4b5563" >SPI</text>
+<text x="835" y="440" font-size="11" font-weight="400" text-anchor="middle" fill="#0d9488" >→ gateway (SensorPacket)</text>
+<rect x="720" y="460" width="230" height="55" rx="8" fill="#eef2f7" stroke="#475569" stroke-width="1.5"/>
+<text x="835.0" y="482.7" font-size="13" font-weight="700" text-anchor="middle" fill="#475569" >DS1307 RTC</text>
+<text x="835.0" y="500.7" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >SDA 21 · SCL 22 · 00:00 self test</text>
+<line x1="592" y1="415" x2="718" y2="485" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)" marker-start="url(#a-gray)"/>
+<text x="650" y="462" font-size="10" font-weight="400" text-anchor="middle" fill="#4b5563" >I²C</text>
+<text x="155" y="480" font-size="13" font-weight="700" text-anchor="middle" fill="#4b5563" >Sensors (inputs)</text>
+<text x="155" y="498" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >analog lines through 33k/47k dividers</text>
+</svg>

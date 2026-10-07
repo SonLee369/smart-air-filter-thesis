@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1190 495" width="1190" height="495" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title>T3 — Data pipeline: from sensor sample to model on the node</title>
+<defs><marker id="a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker><marker id="a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ea580c"/></marker><marker id="a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a16207"/></marker></defs>
+<rect width="1190" height="495" fill="#ffffff"/>
+<text x="595.0" y="34" font-size="18" font-weight="700" text-anchor="middle" fill="#1f2937" >T3 — Data pipeline: from sensor sample to model on the node</text>
+<rect x="40" y="96" width="190" height="84" rx="8" fill="#fff1e6" stroke="#ea580c" stroke-width="1.5"/>
+<text x="135.0" y="124.2" font-size="13" font-weight="700" text-anchor="middle" fill="#ea580c" >Node sampling</text>
+<text x="135.0" y="142.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >all sensors every 1 s</text>
+<text x="135.0" y="160.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >duty, RPM, power</text>
+<rect x="270" y="96" width="190" height="84" rx="8" fill="#eef2f7" stroke="#475569" stroke-width="1.5"/>
+<text x="365.0" y="124.2" font-size="13" font-weight="700" text-anchor="middle" fill="#475569" >SD card raw log</text>
+<text x="365.0" y="142.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >full-rate CSV</text>
+<text x="365.0" y="160.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >never deleted</text>
+<rect x="500" y="96" width="190" height="84" rx="8" fill="#e0f7f6" stroke="#0d9488" stroke-width="1.5"/>
+<text x="595.0" y="124.2" font-size="13" font-weight="700" text-anchor="middle" fill="#0d9488" >LoRa packet v2</text>
+<text x="595.0" y="142.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >10 s summary</text>
+<text x="595.0" y="160.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >+ sequence number</text>
+<rect x="730" y="96" width="190" height="84" rx="8" fill="#e7f6ec" stroke="#16a34a" stroke-width="1.5"/>
+<text x="825.0" y="124.2" font-size="13" font-weight="700" text-anchor="middle" fill="#16a34a" >Gateway</text>
+<text x="825.0" y="142.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >validate, timestamp</text>
+<text x="825.0" y="160.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >forward over WiFi</text>
+<rect x="960" y="96" width="190" height="84" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="1055.0" y="124.2" font-size="13" font-weight="700" text-anchor="middle" fill="#7c3aed" >Database (PC)</text>
+<text x="1055.0" y="142.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >SQLite / InfluxDB</text>
+<text x="1055.0" y="160.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >daily backup</text>
+<line x1="232" y1="138.0" x2="268" y2="138.0" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<line x1="462" y1="138.0" x2="498" y2="138.0" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<line x1="692" y1="138.0" x2="728" y2="138.0" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<line x1="922" y1="138.0" x2="958" y2="138.0" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<path d="M365,94 L365,74 L1055,74 L1055,94" fill="none" stroke="#374151" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#a-gray)"/>
+<text x="710" y="68" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >SD card copied weekly to fill LoRa gaps</text>
+<rect x="960" y="260" width="190" height="84" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="1055.0" y="288.2" font-size="13" font-weight="700" text-anchor="middle" fill="#7c3aed" >Clean + align</text>
+<text x="1055.0" y="306.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >resample to 10 s</text>
+<text x="1055.0" y="324.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >outliers, gaps, flags</text>
+<rect x="730" y="260" width="190" height="84" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="825.0" y="288.2" font-size="13" font-weight="700" text-anchor="middle" fill="#7c3aed" >Features</text>
+<text x="825.0" y="306.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >windows 10–30 min</text>
+<text x="825.0" y="324.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >time of day, RH, T</text>
+<rect x="500" y="260" width="190" height="84" rx="8" fill="#e8f0fe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="595.0" y="288.2" font-size="13" font-weight="700" text-anchor="middle" fill="#2563eb" >Train + validate</text>
+<text x="595.0" y="306.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >time-based split</text>
+<text x="595.0" y="324.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >no future leakage</text>
+<rect x="270" y="260" width="190" height="84" rx="8" fill="#e8f0fe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="365.0" y="288.2" font-size="13" font-weight="700" text-anchor="middle" fill="#2563eb" >Quantise int8</text>
+<text x="365.0" y="306.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >test on ESP32:</text>
+<text x="365.0" y="324.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >latency, RAM, accuracy</text>
+<rect x="40" y="260" width="190" height="84" rx="8" fill="#e7f6ec" stroke="#16a34a" stroke-width="1.5"/>
+<text x="135.0" y="288.2" font-size="13" font-weight="700" text-anchor="middle" fill="#16a34a" >OTA model update</text>
+<text x="135.0" y="306.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >gateway → node</text>
+<text x="135.0" y="324.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >A/B slot, rollback</text>
+<line x1="1055" y1="182" x2="1055" y2="258" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<line x1="958" y1="302.0" x2="922" y2="302.0" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<line x1="728" y1="302.0" x2="692" y2="302.0" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<line x1="498" y1="302.0" x2="462" y2="302.0" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<line x1="268" y1="302.0" x2="232" y2="302.0" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<path d="M135,260 L135,182" fill="none" stroke="#16a34a" stroke-width="2" marker-end="url(#a-green)"/>
+<text x="143" y="212" font-size="11" font-weight="400" text-anchor="start" fill="#16a34a" >new model runs on the node</text>
+<rect x="960" y="400" width="190" height="70" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+<text x="1055.0" y="430.2" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937" >Public dataset (C1)</text>
+<text x="1055.0" y="448.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >README, licence, DOI</text>
+<line x1="1055" y1="346" x2="1055" y2="398" stroke="#374151" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#a-gray)"/>
+<rect x="500" y="400" width="190" height="70" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+<text x="595.0" y="430.2" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937" >Experiment log</text>
+<text x="595.0" y="448.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >controller, block, site</text>
+<line x1="595" y1="398" x2="595" y2="346" stroke="#374151" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#a-gray)"/>
+</svg>

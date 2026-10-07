@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1030 1040" width="1030" height="1040" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title>Fig 7 — Node firmware flowchart</title>
+<defs><marker id="a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker><marker id="a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ea580c"/></marker><marker id="a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a16207"/></marker></defs>
+<rect width="1030" height="1040" fill="#ffffff"/>
+<text x="515.0" y="34" font-size="18" font-weight="700" text-anchor="middle" fill="#1f2937" >Fig 7 — Node firmware flowchart</text>
+<text x="200" y="66" font-size="14" font-weight="700" text-anchor="middle" fill="#4b5563" >setup()</text>
+<rect x="65.0" y="80" width="270" height="46" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+<text x="200.0" y="106.85" font-size="12" font-weight="700" text-anchor="middle" fill="#a16207" >Power on / reset</text>
+<rect x="65.0" y="150" width="270" height="46" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="200.0" y="176.85" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >GPIO: GP2Y LEDs off, LPWM LOW</text>
+<line x1="200" y1="126" x2="200" y2="148" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<rect x="65.0" y="220" width="270" height="46" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="200.0" y="246.85" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >LEDC PWM 20 kHz on RPWM (GPIO26)</text>
+<line x1="200" y1="196" x2="200" y2="218" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<rect x="65.0" y="290" width="270" height="46" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="200.0" y="316.85" font-size="12" font-weight="700" text-anchor="middle" fill="#7c3aed" >Hall ISR on GPIO34 (FALLING)</text>
+<line x1="200" y1="266" x2="200" y2="288" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<rect x="65.0" y="360" width="270" height="46" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="200.0" y="386.85" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >Load MQ-7 R0 from NVS</text>
+<line x1="200" y1="336" x2="200" y2="358" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<rect x="65.0" y="430" width="270" height="46" rx="8" fill="#eef2f7" stroke="#475569" stroke-width="1.5"/>
+<text x="200.0" y="456.85" font-size="12" font-weight="700" text-anchor="middle" fill="#475569" >DS1307: start, set if stopped</text>
+<line x1="200" y1="406" x2="200" y2="428" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<rect x="65.0" y="500" width="270" height="46" rx="8" fill="#e0f7f6" stroke="#0d9488" stroke-width="1.5"/>
+<text x="200.0" y="518.35" font-size="12" font-weight="700" text-anchor="middle" fill="#0d9488" >LoRa Ra-02: 3 tries</text>
+<text x="200.0" y="535.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >radio on, or run without</text>
+<line x1="200" y1="476" x2="200" y2="498" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<line x1="200" y1="546" x2="200" y2="568" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<rect x="65.0" y="570" width="270" height="40" rx="8" fill="#e8f0fe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="200.0" y="593.85" font-size="12" font-weight="700" text-anchor="middle" fill="#2563eb" >→ loop()</text>
+<text x="200" y="700" font-size="14" font-weight="700" text-anchor="middle" fill="#4b5563" >Interrupt (any time)</text>
+<rect x="65.0" y="715" width="270" height="42" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="200.0" y="739.85" font-size="12" font-weight="700" text-anchor="middle" fill="#7c3aed" >KY-003 falling edge</text>
+<line x1="200" y1="757" x2="200" y2="783" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<polygon points="200,785.0 315.0,815 200,845.0 85.0,815" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.5"/><text x="200" y="819" font-size="12" font-weight="600" text-anchor="middle" fill="#1f2937" >Δt ≥ 3 ms since last?</text>
+<line x1="200" y1="845" x2="200" y2="871" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<text x="208" y="864" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >yes</text>
+<rect x="65.0" y="873" width="270" height="40" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="200.0" y="896.85" font-size="12" font-weight="700" text-anchor="middle" fill="#7c3aed" >hallPulses += 1</text>
+<text x="60" y="860" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >no → ignore</text>
+<text x="640" y="66" font-size="14" font-weight="700" text-anchor="middle" fill="#4b5563" >loop()</text>
+<rect x="475.0" y="80" width="330" height="46" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="640.0" y="98.35" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >handleSerial()</text>
+<text x="640.0" y="115.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >t · r · T… · sim · fan · ?</text>
+<rect x="475.0" y="150" width="330" height="46" rx="8" fill="#fde8e8" stroke="#dc2626" stroke-width="1.5"/>
+<text x="640.0" y="168.35" font-size="12" font-weight="700" text-anchor="middle" fill="#dc2626" >updateFanRamp()</text>
+<text x="640.0" y="185.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >duty → target at 0.2 / s (smooth)</text>
+<line x1="640" y1="126" x2="640" y2="148" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<rect x="475.0" y="220" width="330" height="46" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="640.0" y="238.35" font-size="12" font-weight="700" text-anchor="middle" fill="#7c3aed" >updateRpm() every 1 s</text>
+<text x="640.0" y="255.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >RPM = 60 × pulses / s</text>
+<line x1="640" y1="196" x2="640" y2="218" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<rect x="475.0" y="290" width="330" height="46" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="640.0" y="308.35" font-size="12" font-weight="700" text-anchor="middle" fill="#7c3aed" >Motor check (skip ramps + 5 s)</text>
+<text x="640.0" y="325.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >|RPM − duty·6000| &gt; 35 % ×3 → FAULT</text>
+<line x1="640" y1="266" x2="640" y2="288" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<line x1="640" y1="336" x2="640" y2="368" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<polygon points="640,370.0 740.0,400 640,430.0 540.0,400" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/><text x="640" y="404" font-size="12" font-weight="600" text-anchor="middle" fill="#1f2937" >2 s elapsed?</text>
+<line x1="640" y1="430" x2="640" y2="458" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<text x="648" y="450" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >yes</text>
+<rect x="475.0" y="460" width="330" height="46" rx="8" fill="#fff1e6" stroke="#ea580c" stroke-width="1.5"/>
+<text x="640.0" y="478.35" font-size="12" font-weight="700" text-anchor="middle" fill="#ea580c" >readSensors()</text>
+<text x="640.0" y="495.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >2× GP2Y, 2× MQ-7 (trimmed mean), sim overrides</text>
+<rect x="475.0" y="530" width="330" height="46" rx="8" fill="#eef2f7" stroke="#475569" stroke-width="1.5"/>
+<text x="640.0" y="548.35" font-size="12" font-weight="700" text-anchor="middle" fill="#475569" >checkSchedule()</text>
+<text x="640.0" y="565.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >RTC 00:00 → SELF_TEST</text>
+<line x1="640" y1="506" x2="640" y2="528" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<line x1="640" y1="576" x2="640" y2="608" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<polygon points="640,610.0 750.0,640 640,670.0 530.0,640" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/><text x="640" y="644" font-size="12" font-weight="600" text-anchor="middle" fill="#1f2937" >mode == SELF_TEST?</text>
+<line x1="640" y1="670" x2="640" y2="698" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<text x="648" y="690" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >no</text>
+<rect x="475.0" y="700" width="330" height="46" rx="8" fill="#e8f0fe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="640.0" y="718.35" font-size="12" font-weight="700" text-anchor="middle" fill="#2563eb" >checkFilter() + decideMode()</text>
+<text x="640.0" y="735.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >η check · MEASURING ↔ FILTERING</text>
+<line x1="750" y1="640" x2="868" y2="640" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<text x="760" y="632" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >yes</text>
+<rect x="870.0" y="615" width="140" height="50" rx="8" fill="#eef2f7" stroke="#475569" stroke-width="1.5"/>
+<text x="940.0" y="635.35" font-size="12" font-weight="700" text-anchor="middle" fill="#475569" >runSelfTest()</text>
+<text x="940.0" y="652.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >settle, average</text>
+<path d="M940,665 L940,795 L807.0,795" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<line x1="640" y1="746" x2="640" y2="768" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<rect x="475.0" y="770" width="330" height="46" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="640.0" y="788.35" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >printStatus()</text>
+<text x="640.0" y="805.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >3 short lines every 2 s</text>
+<line x1="640" y1="816" x2="640" y2="848" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<polygon points="640,850.0 750.0,880 640,910.0 530.0,880" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/><text x="640" y="884" font-size="12" font-weight="600" text-anchor="middle" fill="#1f2937" >txNow or 5 s?</text>
+<line x1="640" y1="910" x2="640" y2="938" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<text x="648" y="930" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >yes</text>
+<rect x="475.0" y="940" width="330" height="46" rx="8" fill="#e0f7f6" stroke="#0d9488" stroke-width="1.5"/>
+<text x="640.0" y="958.35" font-size="12" font-weight="700" text-anchor="middle" fill="#0d9488" >sendPacket()</text>
+<text x="640.0" y="975.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >SensorPacket 30 B over LoRa</text>
+<path d="M540,400 L460,400 L460,880 L528,880" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<text x="470" y="392" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >no</text>
+<path d="M750,880 L840,880 L840,1010 L430,1010" fill="none" stroke="#374151" stroke-width="1.6"/>
+<path d="M640,986 L640,1010" fill="none" stroke="#374151" stroke-width="1.6"/>
+<path d="M430,1010 L430,103 L473.0,103" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<text x="850" y="900" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >no</text>
+<path d="M335,893 C420,893 420,243 474,243" fill="none" stroke="#7c3aed" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#a-purple)"/>
+<text x="345" y="560" font-size="10" font-weight="400" text-anchor="start" fill="#7c3aed" >count read</text>
+<text x="345" y="573" font-size="10" font-weight="400" text-anchor="start" fill="#7c3aed" >atomically</text>
+</svg>

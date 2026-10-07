@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 460" width="1180" height="460" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title>T6 — RL training in a data-driven simulator, then deployment</title>
+<defs><marker id="a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker><marker id="a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ea580c"/></marker><marker id="a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a16207"/></marker></defs>
+<rect width="1180" height="460" fill="#ffffff"/>
+<text x="590.0" y="34" font-size="18" font-weight="700" text-anchor="middle" fill="#1f2937" >T6 — RL training in a data-driven simulator, then deployment</text>
+<rect x="40" y="90" width="230" height="90" rx="8" fill="#eef2f7" stroke="#475569" stroke-width="1.5"/>
+<text x="155.0" y="121.2" font-size="13" font-weight="700" text-anchor="middle" fill="#475569" >Real data logs (C1)</text>
+<text x="155.0" y="139.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >inlet PM / CO series</text>
+<text x="155.0" y="157.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >duty → outlet response</text>
+<rect x="330" y="70" width="520" height="300" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+<text x="350" y="96" font-size="13" font-weight="700" text-anchor="start" fill="#1f2937" >Training loop (simulation)</text>
+<rect x="360" y="115" width="220" height="100" rx="8" fill="#fff1e6" stroke="#ea580c" stroke-width="1.5"/>
+<text x="470.0" y="142.2" font-size="13" font-weight="700" text-anchor="middle" fill="#ea580c" >Simulator</text>
+<text x="470.0" y="160.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >learned plant model</text>
+<text x="470.0" y="178.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >replays real inlet data</text>
+<text x="470.0" y="196.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >+ noise, disturbances</text>
+<rect x="610" y="115" width="210" height="100" rx="8" fill="#e8f0fe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="715.0" y="151.2" font-size="13" font-weight="700" text-anchor="middle" fill="#2563eb" >RL agent</text>
+<text x="715.0" y="169.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >DQN (discrete duty)</text>
+<text x="715.0" y="187.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >PPO (continuous)</text>
+<line x1="272" y1="135" x2="358" y2="150" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<path d="M582,145 L608,145" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#a-blue)"/>
+<text x="595" y="108" font-size="11" font-weight="600" text-anchor="middle" fill="#2563eb" >state sₜ</text>
+<path d="M608,190 L582,190" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#a-red)"/>
+<text x="595" y="232" font-size="11" font-weight="600" text-anchor="middle" fill="#dc2626" >action aₜ = duty</text>
+<rect x="360" y="250" width="460" height="100" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5"/>
+<text x="590.0" y="277.2" font-size="13" font-weight="700" text-anchor="middle" fill="#ea580c" >Reward rₜ</text>
+<text x="590.0" y="295.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >−(PM + α·CO) − λ·P(u) − μ·|Δu|</text>
+<text x="590.0" y="313.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >same cost as MPC, so the two are comparable</text>
+<text x="590.0" y="331.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >+ penalty if a safety bound is hit</text>
+<line x1="470" y1="217" x2="470" y2="248" stroke="#a16207" stroke-width="1.6" marker-end="url(#a-amber)"/>
+<rect x="900" y="80" width="240" height="68" rx="8" fill="#e8f0fe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="1020.0" y="109.2" font-size="13" font-weight="700" text-anchor="middle" fill="#2563eb" >Trained policy</text>
+<text x="1020.0" y="127.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >best checkpoint</text>
+<rect x="900" y="172" width="240" height="68" rx="8" fill="#e8f0fe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="1020.0" y="201.2" font-size="13" font-weight="700" text-anchor="middle" fill="#2563eb" >Distil to small MLP</text>
+<text x="1020.0" y="219.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >int8, &lt; 50 KB</text>
+<line x1="1020" y1="150" x2="1020" y2="170" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<rect x="900" y="264" width="240" height="68" rx="8" fill="#fff1e6" stroke="#ea580c" stroke-width="1.5"/>
+<text x="1020.0" y="293.2" font-size="13" font-weight="700" text-anchor="middle" fill="#ea580c" >Chamber validation</text>
+<text x="1020.0" y="311.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >vs MPC and threshold</text>
+<line x1="1020" y1="242" x2="1020" y2="262" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<rect x="900" y="356" width="240" height="68" rx="8" fill="#e7f6ec" stroke="#16a34a" stroke-width="1.5"/>
+<text x="1020.0" y="385.2" font-size="13" font-weight="700" text-anchor="middle" fill="#16a34a" >Deploy on ESP32</text>
+<text x="1020.0" y="403.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >behind the supervisor</text>
+<line x1="1020" y1="334" x2="1020" y2="354" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<path d="M822,165 L860,165 L860,114 L898,114" fill="none" stroke="#2563eb" stroke-width="1.6" marker-end="url(#a-blue)"/>
+<path d="M900,310 L870,310 L870,410 L345,410 L345,180 L358,180" fill="none" stroke="#374151" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#a-gray)"/>
+<text x="600" y="428" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >sim-to-real gap too large → recalibrate the simulator</text>
+<line x1="715" y1="248" x2="715" y2="217" stroke="#a16207" stroke-width="1.6" marker-end="url(#a-amber)"/>
+<text x="723" y="236" font-size="11" font-weight="700" text-anchor="start" fill="#a16207" >rₜ</text>
+</svg>

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 440" width="1140" height="440" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title>T8 — Experiment design: chamber trials and field rotation</title>
+<defs><marker id="a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker><marker id="a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ea580c"/></marker><marker id="a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a16207"/></marker></defs>
+<rect width="1140" height="440" fill="#ffffff"/>
+<text x="570.0" y="34" font-size="18" font-weight="700" text-anchor="middle" fill="#1f2937" >T8 — Experiment design: chamber trials and field rotation</text>
+<text x="40" y="72" font-size="14" font-weight="700" text-anchor="start" fill="#1f2937" >(a) Test chamber</text>
+<rect x="40" y="90" width="480" height="300" rx="10" fill="#f8fafc" stroke="#374151" stroke-width="2.5"/>
+<text x="280" y="380" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >sealed box, volume V (measure and report)</text>
+<rect x="70" y="290" width="120" height="70" rx="8" fill="#fde8e8" stroke="#dc2626" stroke-width="1.5"/>
+<text x="130.0" y="320.35" font-size="12" font-weight="700" text-anchor="middle" fill="#dc2626" >Smoke source</text>
+<text x="130.0" y="337.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >incense, fixed time</text>
+<rect x="70" y="120" width="120" height="60" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="130.0" y="145.35" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >Mixing fan</text>
+<text x="130.0" y="162.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >even concentration</text>
+<rect x="270" y="130" width="110" height="220" rx="8" fill="#e8f0fe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="325" y="155" font-size="12" font-weight="700" text-anchor="middle" fill="#2563eb" >Filter column</text>
+<text x="325" y="175" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >(under test)</text>
+<line x1="240" y1="320" x2="268" y2="320" stroke="#dc2626" stroke-width="2.5" marker-end="url(#a-red)"/>
+<text x="236" y="312" font-size="11" font-weight="400" text-anchor="end" fill="#dc2626" >inlet</text>
+<line x1="325" y1="128" x2="325" y2="102" stroke="#16a34a" stroke-width="2.5" marker-end="url(#a-green)"/>
+<text x="333" y="112" font-size="11" font-weight="400" text-anchor="start" fill="#16a34a" >outlet</text>
+<rect x="410" y="220" width="95" height="70" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="457.5" y="250.35" font-size="12" font-weight="700" text-anchor="middle" fill="#7c3aed" >PMS5003</text>
+<text x="457.5" y="267.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >chamber ref.</text>
+<path d="M190,325 C215,325 225,320 238,320" fill="none" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#a-red)"/>
+<text x="60" y="420" font-size="11.5" font-weight="400" text-anchor="start" fill="#4b5563" >≥ 10 trials per controller and smoke dose · log decay curves · same start concentration</text>
+<text x="600" y="72" font-size="14" font-weight="700" text-anchor="start" fill="#1f2937" >(b) Field rotation schedule (example randomisation)</text>
+<text x="660" y="104" font-size="10.5" font-weight="400" text-anchor="middle" fill="#4b5563" >06:00</text>
+<text x="716" y="104" font-size="10.5" font-weight="400" text-anchor="middle" fill="#4b5563" >08:00</text>
+<text x="772" y="104" font-size="10.5" font-weight="400" text-anchor="middle" fill="#4b5563" >10:00</text>
+<text x="828" y="104" font-size="10.5" font-weight="400" text-anchor="middle" fill="#4b5563" >12:00</text>
+<text x="884" y="104" font-size="10.5" font-weight="400" text-anchor="middle" fill="#4b5563" >14:00</text>
+<text x="940" y="104" font-size="10.5" font-weight="400" text-anchor="middle" fill="#4b5563" >16:00</text>
+<text x="996" y="104" font-size="10.5" font-weight="400" text-anchor="middle" fill="#4b5563" >18:00</text>
+<text x="1052" y="104" font-size="10.5" font-weight="400" text-anchor="middle" fill="#4b5563" >20:00</text>
+<text x="1108" y="104" font-size="10.5" font-weight="400" text-anchor="middle" fill="#4b5563" >22:00</text>
+<text x="600" y="146" font-size="12" font-weight="600" text-anchor="start" fill="#1f2937" >Day 1</text>
+<rect x="660" y="116" width="52" height="44" rx="5" fill="#2563eb" fill-opacity="0.35" stroke="#2563eb" stroke-width="1.2"/>
+<text x="686.0" y="143" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >C</text>
+<rect x="716" y="116" width="52" height="44" rx="5" fill="#9ca3af" fill-opacity="0.35" stroke="#9ca3af" stroke-width="1.2"/>
+<text x="742.0" y="143" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >A</text>
+<rect x="772" y="116" width="52" height="44" rx="5" fill="#7c3aed" fill-opacity="0.35" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="798.0" y="143" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >D</text>
+<rect x="828" y="116" width="52" height="44" rx="5" fill="#e5e7eb" fill-opacity="1" stroke="#e5e7eb" stroke-width="1.2"/>
+<text x="854.0" y="143" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >off</text>
+<rect x="884" y="116" width="52" height="44" rx="5" fill="#f59e0b" fill-opacity="0.35" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="910.0" y="143" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >B</text>
+<rect x="940" y="116" width="52" height="44" rx="5" fill="#9ca3af" fill-opacity="0.35" stroke="#9ca3af" stroke-width="1.2"/>
+<text x="966.0" y="143" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >A</text>
+<rect x="996" y="116" width="52" height="44" rx="5" fill="#2563eb" fill-opacity="0.35" stroke="#2563eb" stroke-width="1.2"/>
+<text x="1022.0" y="143" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >C</text>
+<rect x="1052" y="116" width="52" height="44" rx="5" fill="#7c3aed" fill-opacity="0.35" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="1078.0" y="143" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >D</text>
+<text x="600" y="202" font-size="12" font-weight="600" text-anchor="start" fill="#1f2937" >Day 2</text>
+<rect x="660" y="172" width="52" height="44" rx="5" fill="#f59e0b" fill-opacity="0.35" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="686.0" y="199" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >B</text>
+<rect x="716" y="172" width="52" height="44" rx="5" fill="#e5e7eb" fill-opacity="1" stroke="#e5e7eb" stroke-width="1.2"/>
+<text x="742.0" y="199" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >off</text>
+<rect x="772" y="172" width="52" height="44" rx="5" fill="#7c3aed" fill-opacity="0.35" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="798.0" y="199" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >D</text>
+<rect x="828" y="172" width="52" height="44" rx="5" fill="#2563eb" fill-opacity="0.35" stroke="#2563eb" stroke-width="1.2"/>
+<text x="854.0" y="199" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >C</text>
+<rect x="884" y="172" width="52" height="44" rx="5" fill="#9ca3af" fill-opacity="0.35" stroke="#9ca3af" stroke-width="1.2"/>
+<text x="910.0" y="199" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >A</text>
+<rect x="940" y="172" width="52" height="44" rx="5" fill="#e5e7eb" fill-opacity="1" stroke="#e5e7eb" stroke-width="1.2"/>
+<text x="966.0" y="199" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >off</text>
+<rect x="996" y="172" width="52" height="44" rx="5" fill="#f59e0b" fill-opacity="0.35" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="1022.0" y="199" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >B</text>
+<rect x="1052" y="172" width="52" height="44" rx="5" fill="#9ca3af" fill-opacity="0.35" stroke="#9ca3af" stroke-width="1.2"/>
+<text x="1078.0" y="199" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >A</text>
+<text x="600" y="258" font-size="12" font-weight="600" text-anchor="start" fill="#1f2937" >Day 3</text>
+<rect x="660" y="228" width="52" height="44" rx="5" fill="#7c3aed" fill-opacity="0.35" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="686.0" y="255" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >D</text>
+<rect x="716" y="228" width="52" height="44" rx="5" fill="#2563eb" fill-opacity="0.35" stroke="#2563eb" stroke-width="1.2"/>
+<text x="742.0" y="255" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >C</text>
+<rect x="772" y="228" width="52" height="44" rx="5" fill="#f59e0b" fill-opacity="0.35" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="798.0" y="255" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >B</text>
+<rect x="828" y="228" width="52" height="44" rx="5" fill="#9ca3af" fill-opacity="0.35" stroke="#9ca3af" stroke-width="1.2"/>
+<text x="854.0" y="255" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >A</text>
+<rect x="884" y="228" width="52" height="44" rx="5" fill="#e5e7eb" fill-opacity="1" stroke="#e5e7eb" stroke-width="1.2"/>
+<text x="910.0" y="255" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >off</text>
+<rect x="940" y="228" width="52" height="44" rx="5" fill="#2563eb" fill-opacity="0.35" stroke="#2563eb" stroke-width="1.2"/>
+<text x="966.0" y="255" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >C</text>
+<rect x="996" y="228" width="52" height="44" rx="5" fill="#7c3aed" fill-opacity="0.35" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="1022.0" y="255" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >D</text>
+<rect x="1052" y="228" width="52" height="44" rx="5" fill="#f59e0b" fill-opacity="0.35" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="1078.0" y="255" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937" >B</text>
+<rect x="600" y="300" width="14" height="14" rx="3" fill="#9ca3af" fill-opacity="0.35" stroke="#9ca3af"/>
+<text x="620" y="312" font-size="11.5" font-weight="400" text-anchor="start" fill="#4b5563" >A · Threshold</text>
+<rect x="720" y="300" width="14" height="14" rx="3" fill="#f59e0b" fill-opacity="0.35" stroke="#f59e0b"/>
+<text x="740" y="312" font-size="11.5" font-weight="400" text-anchor="start" fill="#4b5563" >B · PID / fuzzy</text>
+<rect x="840" y="300" width="14" height="14" rx="3" fill="#2563eb" fill-opacity="0.35" stroke="#2563eb"/>
+<text x="860" y="312" font-size="11.5" font-weight="400" text-anchor="start" fill="#4b5563" >C · MPC</text>
+<rect x="960" y="300" width="14" height="14" rx="3" fill="#7c3aed" fill-opacity="0.35" stroke="#7c3aed"/>
+<text x="980" y="312" font-size="11.5" font-weight="400" text-anchor="start" fill="#4b5563" >D · RL</text>
+<rect x="1080" y="300" width="14" height="14" rx="3" fill="#e5e7eb" fill-opacity="1" stroke="#e5e7eb"/>
+<text x="1100" y="312" font-size="11.5" font-weight="400" text-anchor="start" fill="#4b5563" >Fan off</text>
+<text x="600" y="350" font-size="11.5" font-weight="400" text-anchor="start" fill="#4b5563" >2-hour blocks, order shuffled daily so rush hours hit every controller</text>
+<text x="600" y="370" font-size="11.5" font-weight="400" text-anchor="start" fill="#4b5563" >≥ 4 weeks (excluding Tết) · paired Wilcoxon tests against A · 95 % CIs</text>
+<text x="600" y="390" font-size="11.5" font-weight="400" text-anchor="start" fill="#4b5563" >Sequences shown are an example; generate the real ones with a fixed random seed</text>
+</svg>

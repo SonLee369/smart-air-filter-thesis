@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 525" width="1080" height="525" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title>Fig 5 — Airflow and operating principle</title>
+<defs><marker id="a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker><marker id="a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ea580c"/></marker><marker id="a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a16207"/></marker></defs>
+<rect width="1080" height="525" fill="#ffffff"/>
+<text x="540.0" y="34" font-size="18" font-weight="700" text-anchor="middle" fill="#1f2937" >Fig 5 — Airflow and operating principle</text>
+<rect x="100" y="110" width="860" height="120" rx="14" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+<text x="195" y="98" font-size="12" font-weight="700" text-anchor="middle" fill="#4b5563" >Inlet duct</text>
+<rect x="130" y="135" width="130" height="70" rx="8" fill="#fff1e6" stroke="#ea580c" stroke-width="1.5"/>
+<text x="195.0" y="165.2" font-size="13" font-weight="700" text-anchor="middle" fill="#ea580c" >Sensors IN</text>
+<text x="195.0" y="183.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >GP2Y + MQ-7</text>
+<circle cx="345" cy="170" r="48" fill="#fde8e8" stroke="#dc2626" stroke-width="2"/>
+<path d="M355.0,170.0 Q374.9,173.0 378.0,192.6" fill="none" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<path d="M350.0,178.7 Q357.3,197.3 341.9,209.9" fill="none" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<path d="M340.0,178.7 Q327.5,194.4 308.9,187.3" fill="none" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<path d="M335.0,170.0 Q315.1,167.0 312.0,147.4" fill="none" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<path d="M340.0,161.3 Q332.7,142.7 348.1,130.1" fill="none" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<path d="M350.0,161.3 Q362.5,145.6 381.1,152.7" fill="none" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+<circle cx="345" cy="170" r="8" fill="#dc2626"/>
+<text x="345" y="98" font-size="12" font-weight="700" text-anchor="middle" fill="#4b5563" >Fan (12 V, PWM)</text>
+<rect x="440" y="116" width="85" height="108" rx="6" fill="#fde68a" stroke="#a16207" stroke-width="1.5"/>
+<line x1="450" y1="122" x2="450" y2="218" stroke="#a16207" stroke-width="1" opacity=".6"/>
+<line x1="463" y1="122" x2="463" y2="218" stroke="#a16207" stroke-width="1" opacity=".6"/>
+<line x1="476" y1="122" x2="476" y2="218" stroke="#a16207" stroke-width="1" opacity=".6"/>
+<line x1="489" y1="122" x2="489" y2="218" stroke="#a16207" stroke-width="1" opacity=".6"/>
+<line x1="502" y1="122" x2="502" y2="218" stroke="#a16207" stroke-width="1" opacity=".6"/>
+<line x1="515" y1="122" x2="515" y2="218" stroke="#a16207" stroke-width="1" opacity=".6"/>
+<text x="482" y="252" font-size="11" font-weight="600" text-anchor="middle" fill="#a16207" >Coarse pre-filter</text>
+<rect x="545" y="116" width="85" height="108" rx="6" fill="#d1d5db" stroke="#111827" stroke-width="1.5"/>
+<circle cx="557" cy="132" r="5" fill="#4b5563"/>
+<circle cx="577" cy="132" r="5" fill="#4b5563"/>
+<circle cx="597" cy="132" r="5" fill="#4b5563"/>
+<circle cx="617" cy="132" r="5" fill="#4b5563"/>
+<circle cx="557" cy="157" r="5" fill="#4b5563"/>
+<circle cx="577" cy="157" r="5" fill="#4b5563"/>
+<circle cx="597" cy="157" r="5" fill="#4b5563"/>
+<circle cx="617" cy="157" r="5" fill="#4b5563"/>
+<circle cx="557" cy="182" r="5" fill="#4b5563"/>
+<circle cx="577" cy="182" r="5" fill="#4b5563"/>
+<circle cx="597" cy="182" r="5" fill="#4b5563"/>
+<circle cx="617" cy="182" r="5" fill="#4b5563"/>
+<circle cx="557" cy="207" r="5" fill="#4b5563"/>
+<circle cx="577" cy="207" r="5" fill="#4b5563"/>
+<text x="587" y="252" font-size="11" font-weight="600" text-anchor="middle" fill="#111827" >Activated carbon</text>
+<rect x="650" y="116" width="85" height="108" rx="6" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.5"/>
+<line x1="660" y1="122" x2="660" y2="218" stroke="#2563eb" stroke-width="1" opacity=".6"/>
+<line x1="673" y1="122" x2="673" y2="218" stroke="#2563eb" stroke-width="1" opacity=".6"/>
+<line x1="686" y1="122" x2="686" y2="218" stroke="#2563eb" stroke-width="1" opacity=".6"/>
+<line x1="699" y1="122" x2="699" y2="218" stroke="#2563eb" stroke-width="1" opacity=".6"/>
+<line x1="712" y1="122" x2="712" y2="218" stroke="#2563eb" stroke-width="1" opacity=".6"/>
+<line x1="725" y1="122" x2="725" y2="218" stroke="#2563eb" stroke-width="1" opacity=".6"/>
+<text x="692" y="252" font-size="11" font-weight="600" text-anchor="middle" fill="#2563eb" >Electrostatic cotton</text>
+<text x="597" y="98" font-size="12" font-weight="700" text-anchor="middle" fill="#4b5563" >Filter stack</text>
+<text x="860" y="98" font-size="12" font-weight="700" text-anchor="middle" fill="#4b5563" >Outlet duct</text>
+<rect x="795" y="135" width="130" height="70" rx="8" fill="#fff1e6" stroke="#ea580c" stroke-width="1.5"/>
+<text x="860.0" y="165.2" font-size="13" font-weight="700" text-anchor="middle" fill="#ea580c" >Sensors OUT</text>
+<text x="860.0" y="183.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >GP2Y + MQ-7</text>
+<line x1="20" y1="170" x2="125" y2="170" stroke="#dc2626" stroke-width="4" marker-end="url(#a-red)"/>
+<text x="55" y="150" font-size="12" font-weight="700" text-anchor="middle" fill="#dc2626" >Polluted</text>
+<text x="55" y="196" font-size="12" font-weight="700" text-anchor="middle" fill="#dc2626" >air</text>
+<line x1="262" y1="170" x2="292" y2="170" stroke="#374151" stroke-width="2.5" marker-end="url(#a-gray)"/>
+<line x1="396" y1="170" x2="436" y2="170" stroke="#374151" stroke-width="2.5" marker-end="url(#a-gray)"/>
+<line x1="752" y1="170" x2="790" y2="170" stroke="#374151" stroke-width="2.5" marker-end="url(#a-gray)"/>
+<line x1="928" y1="170" x2="1060" y2="170" stroke="#16a34a" stroke-width="4" marker-end="url(#a-green)"/>
+<text x="1015" y="150" font-size="12" font-weight="700" text-anchor="middle" fill="#16a34a" >Clean</text>
+<text x="1015" y="196" font-size="12" font-weight="700" text-anchor="middle" fill="#16a34a" >air</text>
+<rect x="60" y="290" width="470" height="110" rx="8" fill="#e8f0fe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="295.0" y="331.2" font-size="13" font-weight="700" text-anchor="middle" fill="#2563eb" >MEASURING — fan low</text>
+<text x="295.0" y="349.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >duty 0.22 ≈ 1 320 RPM: a small sample flows past the sensors</text>
+<text x="295.0" y="367.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >CO_in &gt; 50 ppm or PM_in &gt; 35 µg/m³ (after 10 s) → FILTERING</text>
+<rect x="570" y="290" width="470" height="110" rx="8" fill="#fde8e8" stroke="#dc2626" stroke-width="1.5"/>
+<text x="805.0" y="331.2" font-size="13" font-weight="700" text-anchor="middle" fill="#dc2626" >FILTERING — fan high</text>
+<text x="805.0" y="349.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >duty 0.52 ≈ 3 120 RPM: large airflow through the filter stack</text>
+<text x="805.0" y="367.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >≥ 60 s and both below 80 % of threshold → MEASURING</text>
+<rect x="60" y="425" width="980" height="80" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+<text x="550" y="452" font-size="12.5" font-weight="600" text-anchor="middle" fill="#1f2937" >Filter efficiency η = (in − out) / in × 100 %   ·   η_total = (η_PM + η_CO) / 2   ·   η &lt; 50 % for ≈ 60 s → REPLACE FILTER</text>
+<text x="550" y="482" font-size="12.5" font-weight="400" text-anchor="middle" fill="#4b5563" >Airflow  Q = k · (2π · r · RPM / 60) · A,   k = 0.6   (thesis eq. 3–5)</text>
+</svg>

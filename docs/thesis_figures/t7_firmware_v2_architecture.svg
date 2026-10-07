@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 715" width="1000" height="715" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title>T7 — Firmware v2: FreeRTOS tasks on the two ESP32 cores</title>
+<defs><marker id="a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker><marker id="a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ea580c"/></marker><marker id="a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a16207"/></marker></defs>
+<rect width="1000" height="715" fill="#ffffff"/>
+<text x="500.0" y="34" font-size="18" font-weight="700" text-anchor="middle" fill="#1f2937" >T7 — Firmware v2: FreeRTOS tasks on the two ESP32 cores</text>
+<rect x="30" y="70" width="500" height="400" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+<text x="50" y="96" font-size="13" font-weight="700" text-anchor="start" fill="#1f2937" >Core 1 · real-time work</text>
+<rect x="50" y="112" width="460" height="96" rx="8" fill="#fff1e6" stroke="#ea580c" stroke-width="1.5"/>
+<text x="280.0" y="146.2" font-size="13" font-weight="700" text-anchor="middle" fill="#ea580c" >Sensing task</text>
+<text x="280.0" y="164.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >GP2Y pulses, MQ-7, PMS5003 (UART2)</text>
+<text x="280.0" y="182.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >I²C: SHT31, INA219, ΔP, RTC</text>
+<text x="498" y="134" font-size="11" font-weight="600" text-anchor="end" fill="#4b5563" >every 1 s</text>
+<rect x="50" y="228" width="460" height="96" rx="8" fill="#e8f0fe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="280.0" y="262.2" font-size="13" font-weight="700" text-anchor="middle" fill="#2563eb" >AI task</text>
+<text x="280.0" y="280.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >calibrate → Kalman → forecast</text>
+<text x="280.0" y="298.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >MPC search or RL policy → u*</text>
+<text x="498" y="250" font-size="11" font-weight="600" text-anchor="end" fill="#4b5563" >every 10 s</text>
+<rect x="50" y="344" width="460" height="96" rx="8" fill="#fde8e8" stroke="#dc2626" stroke-width="1.5"/>
+<text x="280.0" y="378.2" font-size="13" font-weight="700" text-anchor="middle" fill="#dc2626" >Control task</text>
+<text x="280.0" y="396.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >supervisor: bounds, rate limit</text>
+<text x="280.0" y="414.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >PWM ramp on RPWM</text>
+<text x="498" y="366" font-size="11" font-weight="600" text-anchor="end" fill="#4b5563" >every 50 ms</text>
+<rect x="570" y="70" width="400" height="400" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+<text x="590" y="96" font-size="13" font-weight="700" text-anchor="start" fill="#1f2937" >Core 0 · communication and storage</text>
+<rect x="590" y="112" width="360" height="96" rx="8" fill="#e0f7f6" stroke="#0d9488" stroke-width="1.5"/>
+<text x="770.0" y="146.2" font-size="13" font-weight="700" text-anchor="middle" fill="#0d9488" >LoRa task</text>
+<text x="770.0" y="164.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >TX packet v2</text>
+<text x="770.0" y="182.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >RX settings, model chunks</text>
+<text x="938" y="134" font-size="11" font-weight="600" text-anchor="end" fill="#4b5563" >every 10 s</text>
+<rect x="590" y="228" width="360" height="96" rx="8" fill="#eef2f7" stroke="#475569" stroke-width="1.5"/>
+<text x="770.0" y="262.2" font-size="13" font-weight="700" text-anchor="middle" fill="#475569" >Logging task</text>
+<text x="770.0" y="280.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >append CSV to SD card</text>
+<text x="770.0" y="298.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >rotate files daily</text>
+<text x="938" y="250" font-size="11" font-weight="600" text-anchor="end" fill="#4b5563" >every 1 s</text>
+<rect x="590" y="344" width="360" height="96" rx="8" fill="#e7f6ec" stroke="#16a34a" stroke-width="1.5"/>
+<text x="770.0" y="378.2" font-size="13" font-weight="700" text-anchor="middle" fill="#16a34a" >Model store</text>
+<text x="770.0" y="396.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >flash slots A / B</text>
+<text x="770.0" y="414.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >verify CRC, roll back</text>
+<text x="938" y="366" font-size="11" font-weight="600" text-anchor="end" fill="#4b5563" >on update</text>
+<rect x="250" y="510" width="500" height="84" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+<text x="500.0" y="547.2" font-size="13" font-weight="700" text-anchor="middle" fill="#a16207" >Shared state (mutex)</text>
+<text x="500.0" y="565.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >latest readings · ring buffer of 30 min · current u · flags</text>
+<line x1="150" y1="472" x2="220.0" y2="508" stroke="#a16207" stroke-width="1.6" marker-end="url(#a-amber)" marker-start="url(#a-amber)"/>
+<line x1="280" y1="472" x2="324.0" y2="508" stroke="#a16207" stroke-width="1.6" marker-end="url(#a-amber)" marker-start="url(#a-amber)"/>
+<line x1="400" y1="472" x2="400" y2="508" stroke="#a16207" stroke-width="1.6" marker-end="url(#a-amber)" marker-start="url(#a-amber)"/>
+<line x1="700" y1="472" x2="660" y2="508" stroke="#a16207" stroke-width="1.6" marker-end="url(#a-amber)" marker-start="url(#a-amber)"/>
+<line x1="860" y1="472" x2="820" y2="508" stroke="#a16207" stroke-width="1.6" marker-end="url(#a-amber)" marker-start="url(#a-amber)"/>
+<rect x="30" y="620" width="300" height="70" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="180.0" y="650.2" font-size="13" font-weight="700" text-anchor="middle" fill="#7c3aed" >Hall ISR (GPIO34)</text>
+<text x="180.0" y="668.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >count pulses → RPM</text>
+<rect x="370" y="620" width="300" height="70" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5"/>
+<text x="520.0" y="650.2" font-size="13" font-weight="700" text-anchor="middle" fill="#ea580c" >Watchdog</text>
+<text x="520.0" y="668.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >AI task late → fallback controller</text>
+<rect x="710" y="620" width="260" height="70" rx="8" fill="#eef2f7" stroke="#475569" stroke-width="1.5"/>
+<text x="840.0" y="650.2" font-size="13" font-weight="700" text-anchor="middle" fill="#475569" >RTC schedule</text>
+<text x="840.0" y="668.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >00:00 sensor self-test</text>
+<line x1="180" y1="618" x2="330" y2="596" stroke="#7c3aed" stroke-width="1.6" marker-end="url(#a-purple)"/>
+<line x1="520" y1="618" x2="520" y2="596" stroke="#ea580c" stroke-width="1.6" marker-end="url(#a-orange)"/>
+<line x1="840" y1="618" x2="700" y2="596" stroke="#374151" stroke-width="1.6" marker-end="url(#a-gray)"/>
+</svg>

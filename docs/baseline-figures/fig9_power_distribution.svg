@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 990 615" width="990" height="615" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title>Fig 9 — Power distribution</title>
+<defs><marker id="a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker><marker id="a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ea580c"/></marker><marker id="a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a16207"/></marker></defs>
+<rect width="990" height="615" fill="#ffffff"/>
+<text x="495.0" y="34" font-size="18" font-weight="700" text-anchor="middle" fill="#1f2937" >Fig 9 — Power distribution</text>
+<text x="500" y="58" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >Two separate supplies (thesis 2.3.1): motor power never shares the 5 V control rail</text>
+<rect x="30" y="255" width="120" height="60" rx="8" fill="#e5e7eb" stroke="#111827" stroke-width="1.5"/>
+<text x="90.0" y="280.2" font-size="13" font-weight="700" text-anchor="middle" fill="#111827" >AC 220 V</text>
+<text x="90.0" y="298.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >mains</text>
+<rect x="230" y="100" width="200" height="70" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+<text x="330.0" y="130.2" font-size="13" font-weight="700" text-anchor="middle" fill="#a16207" >12 V 15 A PSU</text>
+<text x="330.0" y="148.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >180 W · OVP / OCP / SCP</text>
+<rect x="230" y="390" width="200" height="70" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+<text x="330.0" y="420.2" font-size="13" font-weight="700" text-anchor="middle" fill="#a16207" >5 V 1 A adapter</text>
+<text x="330.0" y="438.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >control + sensors</text>
+<path d="M150,285 L190,285 L190,135 L228,135" fill="none" stroke="#dc2626" stroke-width="1.6" marker-end="url(#a-red)"/>
+<path d="M150,285 L190,285 L190,425 L228,425" fill="none" stroke="#a16207" stroke-width="1.6" marker-end="url(#a-amber)"/>
+<rect x="520" y="100" width="180" height="70" rx="8" fill="#fde8e8" stroke="#dc2626" stroke-width="1.5"/>
+<text x="610.0" y="130.2" font-size="13" font-weight="700" text-anchor="middle" fill="#dc2626" >BTS7960</text>
+<text x="610.0" y="148.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >B+ / B− (power stage)</text>
+<rect x="790" y="100" width="170" height="70" rx="8" fill="#fde8e8" stroke="#dc2626" stroke-width="1.5"/>
+<text x="875.0" y="130.2" font-size="13" font-weight="700" text-anchor="middle" fill="#dc2626" >Fan motor</text>
+<text x="875.0" y="148.2" font-size="12" font-weight="400" text-anchor="middle" fill="#4b5563" >12 V DC · PWM speed</text>
+<line x1="432" y1="135" x2="518" y2="135" stroke="#dc2626" stroke-width="2.4" marker-end="url(#a-red)"/>
+<text x="475" y="126" font-size="11" font-weight="700" text-anchor="middle" fill="#dc2626" >12 V</text>
+<line x1="702" y1="135" x2="788" y2="135" stroke="#dc2626" stroke-width="2.4" marker-end="url(#a-red)"/>
+<text x="745" y="126" font-size="11" font-weight="600" text-anchor="middle" fill="#4b5563" >M+ / M−</text>
+<line x1="432" y1="425" x2="470" y2="425" stroke="#a16207" stroke-width="2.4"/>
+<line x1="470" y1="250" x2="470" y2="535" stroke="#a16207" stroke-width="3"/>
+<text x="478" y="238" font-size="12" font-weight="700" text-anchor="start" fill="#a16207" >5 V rail</text>
+<rect x="520" y="250" width="180" height="52" rx="8" fill="#e8f0fe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="610.0" y="271.35" font-size="12" font-weight="700" text-anchor="middle" fill="#2563eb" >ESP32 VIN</text>
+<text x="610.0" y="288.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >on-board 3.3 V LDO</text>
+<line x1="470" y1="276" x2="518" y2="276" stroke="#a16207" stroke-width="1.6" marker-end="url(#a-amber)"/>
+<rect x="520" y="320" width="180" height="52" rx="8" fill="#fff1e6" stroke="#ea580c" stroke-width="1.5"/>
+<text x="610.0" y="341.35" font-size="12" font-weight="700" text-anchor="middle" fill="#ea580c" >GP2Y1010 ×2</text>
+<text x="610.0" y="358.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >150 Ω + 220 µF on V-LED</text>
+<line x1="470" y1="346" x2="518" y2="346" stroke="#a16207" stroke-width="1.6" marker-end="url(#a-amber)"/>
+<rect x="520" y="390" width="180" height="52" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+<text x="610.0" y="411.35" font-size="12" font-weight="700" text-anchor="middle" fill="#b45309" >MQ-7 ×2</text>
+<text x="610.0" y="428.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >heaters (largest 5 V load)</text>
+<line x1="470" y1="416" x2="518" y2="416" stroke="#a16207" stroke-width="1.6" marker-end="url(#a-amber)"/>
+<rect x="520" y="460" width="180" height="52" rx="8" fill="#eef2f7" stroke="#475569" stroke-width="1.5"/>
+<text x="610.0" y="481.35" font-size="12" font-weight="700" text-anchor="middle" fill="#475569" >DS1307 RTC</text>
+<text x="610.0" y="498.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >needs ≥ 4.5 V</text>
+<line x1="470" y1="486" x2="518" y2="486" stroke="#a16207" stroke-width="1.6" marker-end="url(#a-amber)"/>
+<line x1="702" y1="276" x2="740" y2="276" stroke="#2563eb" stroke-width="2.4"/>
+<line x1="740" y1="200" x2="740" y2="370" stroke="#2563eb" stroke-width="3"/>
+<text x="748" y="195" font-size="12" font-weight="700" text-anchor="start" fill="#2563eb" >3.3 V rail</text>
+<rect x="790" y="210" width="170" height="48" rx="8" fill="#e0f7f6" stroke="#0d9488" stroke-width="1.5"/>
+<text x="875.0" y="229.35" font-size="12" font-weight="700" text-anchor="middle" fill="#0d9488" >LoRa Ra-02</text>
+<text x="875.0" y="246.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >TX peak ≈ 120 mA</text>
+<line x1="740" y1="234" x2="788" y2="234" stroke="#2563eb" stroke-width="1.6" marker-end="url(#a-blue)"/>
+<rect x="790" y="270" width="170" height="48" rx="8" fill="#fde8e8" stroke="#dc2626" stroke-width="1.5"/>
+<text x="875.0" y="289.35" font-size="12" font-weight="700" text-anchor="middle" fill="#dc2626" >BTS7960 logic</text>
+<text x="875.0" y="306.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >VCC · R_EN · L_EN</text>
+<line x1="740" y1="294" x2="788" y2="294" stroke="#2563eb" stroke-width="1.6" marker-end="url(#a-blue)"/>
+<rect x="790" y="330" width="170" height="48" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="875.0" y="349.35" font-size="12" font-weight="700" text-anchor="middle" fill="#7c3aed" >KY-003 Hall</text>
+<text x="875.0" y="366.35" font-size="11" font-weight="400" text-anchor="middle" fill="#4b5563" >keeps GPIO34 ≤ 3.3 V</text>
+<line x1="740" y1="354" x2="788" y2="354" stroke="#2563eb" stroke-width="1.6" marker-end="url(#a-blue)"/>
+<rect x="790" y="400" width="170" height="140" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+<text x="802" y="422" font-size="12" font-weight="700" text-anchor="start" fill="#1f2937" >5 V budget (approx.)</text>
+<text x="802" y="445" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >ESP32 + 3.3 V ≈ 200 mA pk</text>
+<text x="802" y="464" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >MQ-7 2 × ≈ 70 mA</text>
+<text x="802" y="483" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >GP2Y 2 × ≈ 20 mA</text>
+<text x="802" y="502" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >DS1307 &lt; 1 mA</text>
+<text x="802" y="521" font-size="11" font-weight="600" text-anchor="start" fill="#16a34a" >Total ≈ 380 mA &lt; 1 A ✓</text>
+<rect x="30" y="570" width="930" height="26" rx="5" fill="#111827"/>
+<text x="495" y="588" font-size="12" font-weight="700" text-anchor="middle" fill="#f9fafb" >COMMON GND — 12 V PSU −, 5 V adapter −, ESP32 GND, all modules</text>
+<path d="M430,160 L448,160 L448,568" fill="none" stroke="#374151" stroke-width="1.6" stroke-dasharray="6 4"/>
+<line x1="330" y1="460" x2="330" y2="568" stroke="#374151" stroke-width="1.6" stroke-dasharray="6 4"/>
+<path d="M700,160 L725,160 L725,190" fill="none" stroke="#374151" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="456" y="548" font-size="10" font-weight="400" text-anchor="start" fill="#4b5563" >PSU −</text>
+<text x="338" y="548" font-size="10" font-weight="400" text-anchor="start" fill="#4b5563" >adapter −</text>
+<text x="712" y="188" font-size="10" font-weight="400" text-anchor="end" fill="#4b5563" >B−</text>
+<rect x="30" y="360" width="170" height="160" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5"/>
+<text x="42" y="382" font-size="12" font-weight="700" text-anchor="start" fill="#ea580c" >Bench tip</text>
+<text x="42" y="404" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >A PC USB port alone</text>
+<text x="42" y="422" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >cannot feed the MQ-7</text>
+<text x="42" y="440" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >heaters + LoRa: power</text>
+<text x="42" y="458" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >sensors from the 5 V</text>
+<text x="42" y="476" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >adapter to avoid brown-</text>
+<text x="42" y="494" font-size="11" font-weight="400" text-anchor="start" fill="#4b5563" >outs / USB drop-outs.</text>
+</svg>
