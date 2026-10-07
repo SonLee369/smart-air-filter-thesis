@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Air Filter</title>
+<style>
+  :root { --bg:#f3f4f6; --card:#fff; --text:#1f2937; --muted:#6b7280; --ok:#16a34a; --bad:#dc2626;
+          --bad-bg:#fdecee; --bad-border:#f3a6ae; --line:#e5e7eb; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { text-align:center; padding:18px 16px 6px; }
+  header h1 { margin:0; font-size:18px; letter-spacing:.5px; text-transform:uppercase; }
+  header .bar { width:80px; height:2px; background:var(--line); margin:10px auto 0; }
+  main { max-width:880px; margin:0 auto; padding:12px 16px; display:grid;
+         grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:16px; }
+  .card { background:var(--card); border:1px solid transparent; border-radius:10px;
+          box-shadow:0 1px 4px rgba(0,0,0,.08); padding:18px; min-height:150px; }
+  .card.alert { background:var(--bad-bg); border-color:var(--bad-border); }
+  .gas { display:flex; align-items:center; gap:12px; }
+  .gas .name { font-weight:700; font-size:20px; width:48px; }
+  .gas .cols { flex:1; display:flex; justify-content:space-around; text-align:center; }
+  .lbl { font-size:11px; color:var(--muted); }
+  .val { font-size:28px; font-weight:700; margin:6px 0 2px; }
+  .unit { font-size:11px; color:var(--muted); }
+  .st { font-size:11px; font-weight:700; margin-top:4px; }
+  .ok { color:var(--ok); } .bad { color:var(--bad); }
+  .center { text-align:center; }
+  .title { font-size:13px; color:var(--muted); letter-spacing:.5px; text-transform:uppercase; }
+  .big { font-size:30px; font-weight:800; margin:10px 0 6px; }
+  .grey { color:#4b5563; }
+  .sub { font-size:12px; color:var(--muted); line-height:1.6; }
+  footer { text-align:center; font-size:12px; color:var(--muted); padding:8px 16px 24px; }
+  .stale main { opacity:.45; }
+</style>
+</head>
+<body>
+<header><h1>Smart Air Filter Column</h1><div class="bar"></div></header>
+<main>
+  <section class="card" id="co-card">
+    <div class="gas"><div class="name">CO</div>
+      <div class="cols">
+        <div><div class="lbl">Inlet sensor</div><div class="val" id="co-in">--</div>
+             <div class="unit">ppm</div><div class="st" id="co-in-st">--</div></div>
+        <div><div class="lbl">Outlet sensor</div><div class="val" id="co-out">--</div>
+             <div class="unit">ppm</div><div class="st" id="co-out-st">--</div></div>
+      </div></div>
+  </section>
+  <section class="card" id="pm-card">
+    <div class="gas"><div class="name">PM</div>
+      <div class="cols">
+        <div><div class="lbl">Inlet sensor</div><div class="val" id="pm-in">--</div>
+             <div class="unit">&micro;g/m&sup3;</div><div class="st" id="pm-in-st">--</div></div>
+        <div><div class="lbl">Outlet sensor</div><div class="val" id="pm-out">--</div>
+             <div class="unit">&micro;g/m&sup3;</div><div class="st" id="pm-out-st">--</div></div>
+      </div></div>
+  </section>
+  <section class="card center" id="motor-card">
+    <div class="title">Motor</div>
+    <div class="big" id="motor">--</div>
+    <div class="sub">Speed: <span id="rpm">--</span> RPM &middot; Mode: <span id="mode">--</span><br>
+      Airflow &asymp; <span id="flow">--</span> m&sup3;/h</div>
+  </section>
+  <section class="card center" id="filter-card">
+    <div class="title">Filter</div>
+    <div class="big grey" id="filter">--</div>
+    <div class="sub" id="filter-sub">--</div>
+    <div class="sub">Efficiency PM: <span id="eta-pm">--</span> &middot; CO: <span id="eta-co">--</span>
+      &middot; Total: <span id="eta-total">--</span></div>
+  </section>
+</main>
+<footer><div id="updated">Waiting for data...</div><div id="link"></div></footer>
+
+<script>
+const $ = id => document.getElementById(id);
+const pad = n => String(n).padStart(2, "0");
+const fmtTime = d => `${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())} ` +
+                     `${pad(d.getDate())}/${pad(d.getMonth() + 1)}/${d.getFullYear()}`;
+const pct = v => v === null ? "n/a" : v.toFixed(0) + "%";
+
+// A reading is a warning when the node flagged the sensor or it is outside the sensor range.
+function sensor(id, value, fault, max) {
+  const warn = fault || value > max || value < 0;
+  $(id).textContent = Math.round(value);
+  $(id + "-st").textContent = warn ? "WARNING!" : "NORMAL";
+  $(id + "-st").className = "st " + (warn ? "bad" : "ok");
+  return warn;
+}
+
+function render(d) {
+  const coWarn = sensor("co-in", d.co_in, d.mq7_fault_in, d.co_max) |
+                 sensor("co-out", d.co_out, d.mq7_fault_out, d.co_max);
+  const pmWarn = sensor("pm-in", d.pm_in, d.gp2y_fault_in, d.pm_max) |
+                 sensor("pm-out", d.pm_out, d.gp2y_fault_out, d.pm_max);
+  $("co-card").classList.toggle("alert", !!coWarn);
+  $("pm-card").classList.toggle("alert", !!pmWarn);
+
+  $("motor").textContent = d.motor_ok ? "NORMAL" : "ERROR";
+  $("motor").className = "big " + (d.motor_ok ? "ok" : "bad");
+  $("rpm").textContent = d.rpm;
+  $("mode").textContent = d.mode;
+  $("flow").textContent = d.airflow_m3h.toFixed(0);
+
+  $("filter").textContent = d.filter_flag ? "REPLACE" : "NORMAL";
+  $("filter-sub").textContent = d.filter_flag ? "Filter efficiency is below 50%" : "Filter working well";
+  $("filter-card").classList.toggle("alert", d.filter_flag);
+  $("eta-pm").textContent = pct(d.eta_pm);
+  $("eta-co").textContent = pct(d.eta_co);
+  const both = d.eta_pm !== null && d.eta_co !== null;
+  $("eta-total").textContent = both ? pct((d.eta_pm + d.eta_co) / 2) : "n/a";  // thesis eq. 11
+
+  const stale = d.age_ms > d.stale_ms;
+  document.body.classList.toggle("stale", stale);
+  const at = new Date(Date.now() - d.age_ms);
+  $("updated").textContent = (stale ? "No data from node since " : "Updated: ") + fmtTime(at);
+  $("link").textContent = `Node ${d.node_id} · RSSI ${d.rssi} dBm · SNR ${d.snr} dB · ` +
+                          `packets ${d.rx_ok} ok / ${d.rx_invalid} dropped`;
+}
+
+async function poll() {
+  try {
+    const r = await fetch("/get-data", { cache: "no-store" });
+    const d = await r.json();
+    if (d.has_data) render(d);
+    else $("updated").textContent = "Waiting for the first LoRa packet...";
+  } catch (e) {
+    $("updated").textContent = "Gateway unreachable";
+  }
+}
+poll();
+setInterval(poll, 2000);
+</script>
+</body>
+</html>
